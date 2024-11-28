@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Kc Nemiaga</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Reset and Background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Dark background */
+            color: #fff; /* White text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* General Layout */
+        .container {
+            padding: 2rem; /* Matches header padding */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #000;
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .logo span {
+            color: #00ff64;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00ff64;
+        }
+
+        /* Section Layouts */
+        .contact {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 3rem;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+        .contact h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00ff64;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Details and Form */
+        .contact .details,
+        .contact form {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid #00ff64;
+            box-shadow: 0 0 10px rgba(0, 255, 100, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+        .contact .details:hover,
+        .contact form:hover {
+            box-shadow: 0 0 15px rgba(0, 255, 100, 0.4);
+        }
+
+        /* Contact Details */
+        .contact .details p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        .contact .details a {
+            color: #00ff64;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact .details a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .contact .details ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact .details ul li {
+            margin: 1rem 0;
+        }
+
+        .contact .details ul li a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+            color: #ddd;
+            transition: color 0.3s ease;
+        }
+
+        .contact .details ul li a:hover {
+            color: #00ff64;
+        }
+
+        .contact .details ul li a i {
+            font-size: 1.6rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact .details ul li a:hover i {
+            color: #00ff64;
+        }
+
+        /* Form Styling */
+        .contact form input,
+        .contact form textarea {
+            width: 95%;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            background: #333;
+            color: #fff;
+            border: 1px solid #00ff64;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .contact form input:focus,
+        .contact form textarea:focus {
+            border-color: #00cc4a;
+            background-color: #444;
+            outline: none;
+        }
+
+        .contact form button {
+            padding: 1rem 2rem;
+            background: #00ff64;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact form button:hover {
+            background-color: #00cc4a;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #101010;
+            color: #666;
+            margin-top: auto;
+            border-top: 1px solid #333;
+        }
+        footer small a {
+            color: #00ff64;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        footer small a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .contact {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Kc<span> Nemiaga</span></div>
+        <nav>
+            <ul>
+                <li><a href="kcc.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact container">
+        <!-- Contact Information -->
+        <div class="details">
+            <h2>Contact Information</h2>
+            <p>Feel free to get in touch with me via the details below, or use the contact form to send a message directly.</p>
+
+            <p><strong>Location:</strong> Lapu-Lapu City, Cebu, Philippines</p>
+            <p><strong>Phone:</strong> <a href="tel:+639123456789">+63 912 345 6789</a></p>
+            <p><strong>Email:</strong> <a href="mailto:kcnemiaga@email.com">kcnemiaga@email.com</a></p>
+
+            <p><strong>Connect with Me:</strong></p>
+           <ul>
+                <li><a href="https://www.facebook.com/kcnemiaga" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://www.linkedin.com/in/kcnemiaga" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://www.twitter.com/kcnemiaga" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://www.instagram.com/kcnemiaga" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <form action="mailto:kcnemiaga@email.com" method="post" enctype="text/plain">
+            <h2>Send a Message</h2>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <small>&copy; 2024 <a href="#">Kc Nemiaga</a>. All Rights Reserved.</small>
+    </footer>
+
+</body>
+</html>

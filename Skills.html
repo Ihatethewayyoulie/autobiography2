@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Kc Nemiaga</title>
+    <style>
+        /* General Reset and Background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Dark background */
+            color: #fff; /* White text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* General Layout */
+        .container {
+            padding: 2rem; /* Matches header padding */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #000;
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .logo span {
+            color: #00ff64;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00ff64;
+        }
+
+        /* Section Layouts */
+        section {
+            margin-bottom: 4rem;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00ff64;
+            margin-bottom: 1rem;
+        }
+        section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            padding: 2rem;
+        }
+
+        .skills-category {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+            gap: 2rem;
+        }
+
+        .skill {
+            padding: 1.5rem;
+            border: 2px solid #00ff64;
+            border-radius: 8px;
+            text-align: center;
+            background: #111;
+            transition: transform 0.3s;
+        }
+        .skill:hover {
+            transform: translateY(-10px);
+        }
+        .skill h3 {
+            font-size: 1.8rem;
+            color: #00ff64;
+            margin-bottom: 1rem;
+        }
+        .skill p {
+            font-size: 1rem;
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #111;
+            color: #666;
+            margin-top: auto;
+        }
+        footer small a {
+            color: #00ff64;
+            text-decoration: none;
+        }
+        footer small a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Kc<span> Nemiaga</span></div>
+        <nav>
+            <ul>
+                <li><a href="kcc.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="skills container">
+        <h2>My Skills</h2>
+        <p>Below is an overview of my core skills, categorized into different areas of expertise.</p>
+
+        <!-- Technical Skills -->
+        <div class="skills-category">
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>Proficient in HTML and CSS, with a good understanding of responsive design and front-end frameworks like Bootstrap and Tailwind CSS.</p>
+            </div>
+            <div class="skill">
+                <h3>Software Development</h3>
+                <p>Skilled in various programming languages such as Python, Java, and C++. Experienced in creating applications, integrating APIs, and writing maintainable code.</p>
+            </div>
+            <div class="skill">
+                <h3>Database Management</h3>
+                <p>Skilled in SQL and NoSQL databases like MySQL, PostgreSQL, MongoDB, and Firebase. Experienced in database modeling and writing efficient queries.</p>
+            </div>
+        </div>
+
+        <!-- Creative Skills -->
+        <div class="skills-category">
+            <div class="skill">
+                <h3>Graphic Design</h3>
+                <p>Expert in creating visual designs for digital and print media using tools like Adobe Photoshop, Illustrator, and InDesign. Specializing in logos, branding, and social media graphics.</p>
+            </div>
+            <div class="skill">
+                <h3>UI/UX Design</h3>
+                <p>Focused on creating intuitive and visually appealing user interfaces and experiences. Proficient in wireframing, prototyping, and using tools like Figma and Adobe XD.</p>
+            </div>
+            <div class="skill">
+                <h3>Video Editing</h3>
+                <p>Skilled in video production and editing using software like Adobe Premiere Pro and Final Cut Pro. Experienced in creating promotional content, tutorials, and social media videos.</p>
+            </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-category">
+            <div class="skill">
+                <h3>Problem Solving</h3>
+                <p>Excellent at identifying challenges and developing creative solutions. I excel in critical thinking and decision-making, particularly in high-pressure situations.</p>
+            </div>
+            <div class="skill">
+                <h3>Communication</h3>
+                <p>Adept at conveying complex ideas in simple terms. Skilled in both written and verbal communication, with a focus on collaboration and teamwork.</p>
+            </div>
+            <div class="skill">
+                <h3>Project Management</h3>
+                <p>Experienced in project planning, scheduling, and task delegation. I have worked with Agile methodologies (Scrum, Kanban) and tools like Jira, Trello, and Asana.</p>
+            </div>
+        </div>
+
+        <!-- Additional Skills -->
+        <div class="skills-category">
+            <div class="skill">
+                <h3>Willingness to Learn</h3>
+                <p>Constantly seeking to improve my skills and knowledge. I embrace challenges and am eager to learn new technologies and techniques.</p>
+            </div>
+            <div class="skill">
+                <h3>Visual Art / Sketching</h3>
+                <p>Passionate about sketching and creating visual art. I enjoy experimenting with different mediums and techniques to create unique pieces of artwork.</p>
+            </div>
+            <div class="skill">
+                <h3>Sewing</h3>
+                <p>Skilled in sewing, from clothing creation to repairs. I have a strong eye for detail and a keen understanding of various fabrics and stitching techniques.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <small>&copy; 2024 <a href="#">Kc Nemiaga</a>. All Rights Reserved.</small>
+    </footer>
+</body>
+</html>

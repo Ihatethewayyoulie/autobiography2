@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kc Nemiaga - Portfolio</title>
+  
+    <style>
+        /* General Reset and Background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Dark background */
+            color: #fff; /* White text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body spans the full viewport height */
+        }
+
+        /* General Layout Padding */
+        .container {
+            padding: 2rem;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #000;
+        }
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .logo span {
+            color: #00ff64;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00ff64;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1; /* Ensures the hero section expands to fill the remaining space */
+            padding: 4rem 2rem;
+            max-width: 1500px; /* Restricts content width for proper spacing */
+            margin: 0 auto;
+            text-align: left;
+        }
+        .hero .left {
+            flex: 1;
+            text-align: center;
+        }
+        .hero .left img {
+            width: 350px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid #00ff64;
+            box-shadow: 0 0 20px 5px #00ff64;
+            object-fit: cover;
+        }
+        .hero .right {
+            flex: 2;
+            padding-left: 2rem;
+        }
+        .hero .right h1 {
+            font-size: 1.5rem; /* Smaller "Hey, I'm" */
+            margin-bottom: -3rem;
+            color: #ccc;
+        }
+        .hero .right h1 span {
+            color: #00ff64;
+        }
+        .hero .right h2 {
+            font-size: 4rem; /* Larger "I'm a" */
+            font-weight: bold;
+            color: #00ff64;
+            margin-bottom: 1rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .hero .right p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #ccc;
+        }
+        .hero .right .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .hero .right .social-icons a {
+            color: #00ff64;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .hero .right .social-icons a:hover {
+            color: #00e055;
+        }
+        .hero .right .btn {
+            background: #000000;
+            color: #ffffff;
+            padding: 0.8rem 2rem;
+            border: none;
+            box-shadow: 0 0 10px 2px #00ff64;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .hero .right .btn:hover {
+            background: #00e055;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #111;
+            color: #666;
+        }
+        footer small {
+            color: #666;
+        }
+        footer small a {
+            color: #00ff64;
+            text-decoration: none;
+        }
+        footer small a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Kc<span> Nemiaga</span></div>
+        <nav>
+            <ul>
+                <li><a href="kcc.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="left">
+            <img src="kcc.jpg" alt="Your Profile Picture">
+        </div>
+        <div class="right">
+            <h1>"Hey, I'm <span>Kc Nemiaga"</span></h1>
+            <h2>I'M AN IT STUDENT</h2> <!-- Larger and emphasized text -->
+            <p>"Hi, I’m a BindTech major at Lapu-Lapu City College, where I blend technology with creativity. My work is all about using tech to create innovative and visually striking solutions. Whether it’s web development or design, I aim to bring fresh ideas to life in every project.</p>
+            <p>Curious to learn more? Take a look around to discover more about me and the path I’m taking in the world of tech and design."</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+         <a href="About.html" class="btn" >Learn More</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <small>&copy; 2024 <a href="#">Kc Nemiaga</a>. All Rights Reserved.</small>
+    </footer>
+
+    <!-- FontAwesome for Icons 
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+</body>
+</html>
